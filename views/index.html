@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button id="menu-btn" aria-label="Abrir menú">
+                &#9776; <!-- icono hamburguesa -->
+            </button>
+            <a href="#perfil">Perfil</a>
+            <a href="#tecnicas">Habilidades Técnicas</a>
+            <a href="#blandas">Habilidades Blandas</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="./contact.html">Contacto</a>
+        </nav>
+    </header>
+
+    <aside id="sidebar">
+        <ul>
+            <li><a href="#perfil">Perfil</a></li>
+            <li><a href="#tecnicas">Habilidades Técnicas</a></li>
+            <li><a href="#blandas">Habilidades Blandas</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <section id="perfil">
+            <img id="avatar" alt="Foto de perfil">
+            <h3 id="name"></h3>
+            <p id="bio"></p>
+        </section>
+
+
+        <section id="tecnicas">
+            <h2>Habilidades Técnicas</h2>
+            <ul>
+                <li>.NET</li>
+                <li>Angular</li>
+                <li>SQL Server</li>
+                <li>Docker</li>
+            </ul>
+        </section>
+
+        <section id="blandas">
+            <h2>Habilidades Blandas</h2>
+            <ul>
+                <li>Comunicación</li>
+                <li>Liderazgo</li>
+                <li>Trabajo en equipo</li>
+            </ul>
+        </section>
+
+
+        <section id="proyectos">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2>Proyectos</h2>
+                <!-- <a href="https://github.com/alexyepez-dev" target="_blank" class="btn btn-primary">Ir a GitHub</a> -->
+                <div id="repos"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Alex Yepez</p>
+        <p>alexdyepez@gmail.com</p>
+    </footer>
+
+    <script src="../logic/index.js"></script>
+</body>
+
+</html>
